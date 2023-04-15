@@ -152,7 +152,7 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 135vh;
     width: 60vw;
 }
 
@@ -210,6 +210,20 @@ header nav a:hover {
         grid-row: 2; 
     }
 
+    .AboutMe {
+        height: 103vh;
+    }
+    .Projects {
+        height: 118vh;
+    }
+    .CyberGrizzlies {
+        height: 180vh;
+    }
+
+    header nav a {
+        padding: 1em 1em;
+    }
+
 }   
 
 
@@ -222,12 +236,26 @@ header nav a:hover {
         padding: 1em 0.5em;
     }
 
+    .AboutMe {
+        height: 103vh;
+    }
+
+    .Projects {
+        height: 118vh;
+    }
+
+    .Projects div div img {
+        max-height: 15em;
+        width: auto;
+    }
+
     .CyberGrizzlies {
-        height: 150vh;
+        height: 201vh;
     }
 
     .CyberGrizzlies > div div {
        width: 20vw;
+       padding: 0.5em;
     }
 
 }
