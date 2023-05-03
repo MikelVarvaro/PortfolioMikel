@@ -1,28 +1,9 @@
 /* 
 #2C3E50 (Dark blue) 
 #27AE60 (Green)
-#F39C12 (Orange) */
-
-/* Attribute selector */
-/* a[external] {
-  color: #0000FF;
-} */
-
-/* ID selector */
-/* #header {
-  font-weight: bold;
-} */
-
-/* Class selector */
-/* .highlight {
-  color: #FF0000;
-} */
-
-/* Element selectors */
-/* p {
-  font-size: 16px;
-} */
-
+#F39C12 (Orange) 
+#3498DB (Light Blue)
+*/
 
 /* Fonts */
 @font-face {
@@ -61,384 +42,406 @@ p{
 }
 
 html {
+    /* Shape */
+    /* Style */
     scroll-behavior: smooth;
     color: #2C3E50;
+    /* Position */
 }
 
 body {
+    /* Shape */
+    /* Style */
     font-size: 10px;
+    background-color: #2c3e50;
+    /* Position */
     display: flex;
     flex-direction: row;
-    background-color: #2c3e50;
-
 }
 
 main {
+    /* Shape */
+    /* Style */
+    /* Position */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    width: 80vw;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 body {
+    /* Shape */
+    /* Style */
+    /* Position */
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
 }
     
-head { grid-area: 1 / 1 / 2 / 2; }
-main { grid-area: 1 / 2 / 2 / 3; }
+head { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
 
 /* Navbar Start */
 
 header {
+    /* Shape */
+    height: 100vh;
+    width: 18vw;
+    /* Stlye */
+    /* Position */
     position: fixed;
     top: 0;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+header nav {
+    /* Shape */
+    height: 100vh;
+    /* Style */
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 header nav a {
-    display: flex;
-    justify-content: center;
-    margin: 0em 2em;
+    /* Shape */
     padding: 1em;
+    /* Style */
     font-size: 1.3rem;
     text-decoration: none;
     color: #3498DB;
     border: 0.1rem solid #3498DB;
     font-family: 'spaceGro', sans-serif;
+    text-align: center;
+    /* Position */
+    display: flex;
+    justify-content: center;
 }
  
 header nav a:hover {
-    color: #27AE60;
-    border: 0.1rem solid #27AE60;
+    /* Shape */
+    /* Style */
+    color: #F39C12;
+    border: 0.1rem solid #F39C12;
+    /* Position */  
 } 
+
+/* .ContentBox {
+    display: flex;
+} */
 
 /* Navbar End */
 /* AboutMe Section Start */
 
 .AboutMe {
+    /* Shape */
+    height: fit-content;
+    min-height: 100vh;
+    width: 80vw;
+    /* Style */
+    background-image: url('asets/aboutBG.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    /* Position */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 80vw;
-    background-image: url('asets/marek-piwnicki-lxoecryHUCI-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.5rem;
+    
+    
 }
 
 .AboutMe div {
-    max-width: 50em;
+    /* Shape */
+    max-width: 35vw;
     margin: 2em;
     padding: 1.5em;
-    background-color: #F39C12;
+    /* Style */
+    background-color: #f39d12cc;
     border-radius: 0.3rem;
+    /* Position */  
 }
 
 .AboutMe h1,
 .AboutMe h2 {
+    /* Shape */
     margin: 0.5em;
     padding: 0.5em;
-    background-color: #F39C12;
+    /* Style */
+    background-color: #f39d12cc;
     border-radius: 0.3rem;
+    /* Position */
 }
 
 /* AboutMe Section End */
 /* Projects Section Start */
 
 .Projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    /* Shape */
     width: 80vw;
-    height: 100vh;
-    background-image: url('asets/wolfgang-hasselmann-QSlXdrjSIhg-unsplash.jpg');
+    height: fit-content;
+    min-height: 100vh;
+    /* Style */
+    background-image: url('asets/ProjectsBG.webp');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0.5rem;
+    text-align: center;
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Projects > div {
+    /* Shape */
+    margin: 3em 1em;
+    /* Style */
+    /* Position */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .Projects div div {
-    text-align: center;
+    /* Shape */
     margin: 2em;
     padding: 1.5em;
-    background-color: #F39C12;
+    width: 25em;
+    /* Style */
+    text-align: center;
+    background-color: #f39d12cc;
     border-radius: 0.3rem;
+    /* Position */
 }
 
 .Projects div div img {
+    /* Shape */
     max-height: 18em;
     width: auto;
+    /* Style */
+    /* Position */
 }
 
 /* Projects Section End */
 /* CyberGrizzlies Section Start*/
 
 .CyberGrizzlies {
+    /* Shape */
+    height: fit-content;
+    min-height: 100vh;
+    width: 80vw;
+    /* Style */
+    background-image: url('asets/AchivementsBG.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    /* Position */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 135vh;
-    width: 80vw;
-    background-image: url('asets/marek-piwnicki-mSOO58gAtYk-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.5rem;
 }
 
 .CyberGrizzlies > p {
+    /* Shape */
     margin: 2em;
     padding: 1.5em;
-    background-color: #F39C12;
+    /* Style */
+    background-color: #f39d12cc;
     border-radius: 0.3rem;
+    /* Position */
+}
+
+.CyberGrizzlies > div + p {
+    /* Shape */
+    margin: 1em;
+    padding: 1em;
+    /* Style */
+    background-color: #f39d12cc;
+    border-radius: 0.3rem;
+    /* Position */
 }
 
 .CyberGrizzlies > div {
+    /* Shape */
+    /* Style */
+    /* Position */
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
 }
 
 .CyberGrizzlies > div div {
+    /* Shape */
+    max-width: 20vw;
+    margin: 0 1em;
+    padding: 1.5em;
+    /* Style */
+    background-color: #f39d12cc;
+    border-radius: 0.3rem;
+    /* Position */
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 40vw;
-    margin: 0 1em;
-    padding: 1.5em;
-    background-color: #F39C12;
-    border-radius: 0.3rem;
 }
 
 .CyberGrizzlies > h2 {
-    margin: 0.5em;
+    margin: 2em 0.5em 0.5em;
     padding: 0.5em;
-    background-color: #F39C12;
+    background-color: #f39d12cc;
     border-radius: 0.3rem;
 }
 
-/* CyberGrizzlies Section End */
-
-/* Laptop Version */
-
-@media only screen and (max-width: 1100px) {
-    
-    header {
-        left: -2em;
-    }
-
-    .Projects > div {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-        
-    .div1 { 
-        grid-column: 1 ;
-        grid-row: 1;
-     }
-    .div2 { 
-        grid-column: 2  ;
-        grid-row: 1 ; 
-    }
-    .div3 { 
-        grid-column: 1 / 2;
-        grid-row: 2; 
-    }
-
-    .AboutMe {
-        height: 103vh;
-    }
-    .Projects {
-        height: 123vh;
-    }
-    .CyberGrizzlies {
-        height: 202vh;
-    }
-
-    header nav a {
-        padding: 1em 0.5em;
-    }
-
-}   
-
-
-/* Tablet */
-
-@media only screen and (max-width: 999px) {
-    
-    header {
-        left: 0em;
-    }
-
-    header nav a {
-        margin: 0em 0.5em;
-        padding: 1em 0.2em;
-    }
-
-    .AboutMe {
-        height: 103vh;
-    }
-
-    .Projects {
-        height: 118vh;
-    }
-
-    .Projects div div img {
-        max-height: 15em;
-        width: auto;
-    }
-
-    .CyberGrizzlies {
-        height: 201vh;
-    }
-
-    .CyberGrizzlies > div div {
-       width: 20vw;
-       padding: 0.5em;
-    }
-
+::-webkit-scrollbar {
+    display: none;
 }
 
-
-/* Mobile */
-
-@media only screen and (max-width: 750px) {
-
-    header {
-        left: 9.5em;
-    }
-
+@media screen and (max-width: 1000px){
     body {
+        /* Shape */
+        width: 95vw;
+        height: auto;
+        margin: 0 auto;
+        /* Style */
+        /* Position */
         display: flex;
         flex-direction: column;
-        width: 90vw;
-        height: 100vh;
-        margin: 1em auto;
+        align-items: center;
+    }
+
+    header {
+        /* Shape */
+        width: 100vw;
+        height: 10vh;
+        margin: 1em 0 0 0;
+        /* Style */
+        /* Position */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    header nav {
+        /* Shape */
+        width: fit-content;
+        height: fit-content;
+        padding: 0.6em;
+        border-radius: 10px;
+        /* Style */
+        background-color: #2C3E50;
+        /* Positioning */
+        display: flex;
+        flex-direction: row;
         align-items: center;
     }
     
-    main {
-        display: flex;
-    }
-        
-    header {
-        position: fixed;
-        top: 0;
-        height: 10vh;
-    }
-
-    header nav {
-        display: flex;
-        justify-content: center;
-        margin: 1em 0 0 0;
-    }
-
     header nav a {
-        font-size: 1rem;
-        text-decoration: none;
-        color: #3498DB;
-        border: 0.1rem solid #3498DB;
+        /* Shape */
+        margin: 0 0.2em;
+        padding: 0.2em;
+        /* Style */
+        /* Position */
+    }
+
+    main {
+        /* Shape */
+        width: 95vw;
+        /* Style */
+        /* Position */
+        align-items: flex-end; 
     }
 
     .AboutMe {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 112vh;
-        width: 90vw;
+        /* Shape */
+        width: 96vw;
+        height: 100vh;
+        /* Style */
+        /* Position */
+    }
+    
+    .Projects {
+        /* Shape */
+        width: 96vw;
+        height: fit-content;
+        /* Style */
+        /* Position */
     }
 
-    .Projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 90vw;
-        height: 229vh;
-        margin: 2em;
-    }
-    
     .Projects > div {
+        /* Shape */
+        /* Style */
+        /* Position */
         display: flex;
         flex-direction: column;
         align-items: center;
+        align-content: center;
     }
-    
-    .Projects div div {
-        text-align: center;
+
+    .Projects > div div {
+        /* Shape */
+        max-width: 25em;
+        /* Style */
+        /* Position */
     }
-    
-    .Projects div div img {
-        max-height: 18em;
-        width: auto;
+
+    .Projects h1 {
+        /* Shape */
+        margin: 3em 0 0 0;
+        /* Style */
+        /* Position */
     }
 
     .CyberGrizzlies {
-            height: 424vh;
-            width: 90vw;
+        /* Shape */
+        width: 96vw;
+        height: fit-content;
+        /* Stlye */
+        /* Position */
+        
+    }
+
+    .CyberGrizzlies h2 {
+        /* Shape */
+        margin: 4.5em 1em 0 1em;
+        /* Style */
+        /* Position */
     }
 
     .CyberGrizzlies > div {
+        /* Shape */
+        /* Style */
+        /* Position */
         display: flex;
         flex-direction: column;
-        width: 100vw;
         align-items: center;
     }
-
+    
     .CyberGrizzlies > div div {
-        width: 40vw;
-        margin: 2em 1em;
-        padding: 1.5em;
-     }
-
-}
-
-/* large Mobile */
-@media only screen and (max-width: 600px){
-    .CyberGrizzlies {
-        height: 445vh;
-    }
-}
-/* Medium Mobile */
-@media only screen and (max-width: 375px){
-    .CyberGrizzlies {
-        height: 508vh;
-    }
-    header {
-        left: 7em;
-    }
-}
-/* Small Mobile */
-@media only screen and (max-width: 350px){
-    .CyberGrizzlies {
-        height: 613vh;
+        /* Shape */
+        max-width: 60vw;
+        /* Style */
+        /* Position */
     }
 
-    header {
-        left: 3.5em;
+    .CyberGrizzlies > div div:nth-child(2) {
+        /* Shape */
+        margin: 3em 0em;
+        /* Style */
+        /* Position */
     }
-}
 
-
-/* Desktop */
-
-@media only screen and (min-width: 760px) {
-    header nav {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        justify-content: space-evenly;;
-    } 
+    .CyberGrizzlies > div + p {
+        /* Shape */
+        margin: 1em;
+        padding: 1em;
+        /* Style */
+        /* Position */
+    }
 }
