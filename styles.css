@@ -365,6 +365,11 @@ header nav a:hover {
         /* Style */
         /* Position */
     }
+
+    .AboutMe div {
+        max-width: 75vw;
+
+    }
     
     .Projects {
         /* Shape */
