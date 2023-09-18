@@ -121,6 +121,7 @@ header nav a {
     /* Position */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
  
 header nav a:hover {
@@ -340,6 +341,7 @@ header nav a:hover {
         display: flex;
         flex-direction: row;
         align-items: center;
+        align-items: stretch;
     }
     
     header nav a {
