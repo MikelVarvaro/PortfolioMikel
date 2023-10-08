@@ -7,130 +7,130 @@
 
 /* Fonts */
 @font-face {
-    font-family: 'spaceGro';
-    src: url('asets/SpaceGrotesk-Regular.woff') format('woff');
+  font-family: "spaceGro";
+  src: url("assets/SpaceGrotesk-Regular.woff") format("woff");
 }
 
-h1{
-    font-size: 2rem;
-    color: #2C3E50;
-    font-family: 'spaceGro', sans-serif;
-    text-align: center;
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  font-family: "spaceGro", sans-serif;
+  text-align: center;
 }
 
-h2{
-    font-size: 1.5rem;
-    color: #2C3E50;
-    font-family: 'spaceGro', sans-serif;
-    text-align: center;
+h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-family: "spaceGro", sans-serif;
+  text-align: center;
 }
 
-h3{
-    font-size: 1.4rem;
-    color: #2C3E50;
-    font-family: 'spaceGro', sans-serif;
-    text-align: center;
+h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  font-family: "spaceGro", sans-serif;
+  text-align: center;
 }
 
-p{
-    font-size: 1.2rem;
-    color: #2C3E50;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 0.1rem;
-    line-height: 1.3rem;
+p {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
 }
 
 html {
-    /* Shape */
-    /* Style */
-    scroll-behavior: smooth;
-    color: #2C3E50;
-    /* Position */
+  /* Shape */
+  /* Style */
+  scroll-behavior: smooth;
+  color: #2c3e50;
+  /* Position */
 }
 
 body {
-    /* Shape */
-    /* Style */
-    font-size: 10px;
-    background-color: #2c3e50;
-    /* Position */
-    display: flex;
-    flex-direction: row;
+  /* Shape */
+  /* Style */
+  font-size: 10px;
+  background-color: #2c3e50;
+  /* Position */
+  display: flex;
+  flex-direction: row;
 }
 
 main {
-    /* Shape */
-    /* Style */
-    /* Position */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 80vw;
-    grid-area: 1 / 2 / 2 / 3;
+  /* Shape */
+  /* Style */
+  /* Position */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 80vw;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 body {
-    /* Shape */
-    /* Style */
-    /* Position */
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
+  /* Shape */
+  /* Style */
+  /* Position */
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
 }
-    
-head { 
-    grid-area: 1 / 1 / 2 / 2; 
+
+head {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 /* Navbar Start */
 
 header {
-    /* Shape */
-    height: 100vh;
-    width: 18vw;
-    /* Stlye */
-    /* Position */
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* Shape */
+  height: 100vh;
+  width: 18vw;
+  /* Stlye */
+  /* Position */
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header nav {
-    /* Shape */
-    height: 100vh;
-    /* Style */
-    /* Position */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  /* Shape */
+  height: 100vh;
+  /* Style */
+  /* Position */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 header nav a {
-    /* Shape */
-    padding: 1em;
-    /* Style */
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #3498DB;
-    border: 0.1rem solid #3498DB;
-    font-family: 'spaceGro', sans-serif;
-    text-align: center;
-    /* Position */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* Shape */
+  padding: 1em;
+  /* Style */
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #3498db;
+  border: 0.1rem solid #3498db;
+  font-family: "spaceGro", sans-serif;
+  text-align: center;
+  /* Position */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
- 
+
 header nav a:hover {
-    /* Shape */
-    /* Style */
-    color: #F39C12;
-    border: 0.1rem solid #F39C12;
-    /* Position */  
-} 
+  /* Shape */
+  /* Style */
+  color: #f39c12;
+  border: 0.1rem solid #f39c12;
+  /* Position */
+}
 
 /* .ContentBox {
     display: flex;
@@ -140,315 +140,470 @@ header nav a:hover {
 /* AboutMe Section Start */
 
 .AboutMe {
-    /* Shape */
-    height: fit-content;
-    min-height: 100vh;
-    width: 80vw;
-    /* Style */
-    background-image: url('asets/aboutBG.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.5rem;
-    /* Position */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    
+  /* Shape */
+  height: fit-content;
+  min-height: 100vh;
+  width: 80vw;
+  /* Style */
+  background-image: url("assets/aboutBG.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  /* Position */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .AboutMe div {
-    /* Shape */
-    max-width: 35vw;
-    margin: 2em;
-    padding: 1.5em;
-    /* Style */
-    background-color: #f39d12cc;
-    border-radius: 0.3rem;
-    /* Position */  
+  /* Shape */
+  max-width: 35vw;
+  margin: 2em;
+  padding: 1.5em;
+  /* Style */
+  background-color: #f39d12cc;
+  border-radius: 0.3rem;
+  /* Position */
 }
 
 .AboutMe h1,
 .AboutMe h2 {
-    /* Shape */
-    margin: 0.5em;
-    padding: 0.5em;
-    /* Style */
-    background-color: #f39d12cc;
-    border-radius: 0.3rem;
-    /* Position */
+  /* Shape */
+  margin: 0.5em;
+  padding: 0.5em;
+  /* Style */
+  background-color: #f39d12cc;
+  border-radius: 0.3rem;
+  /* Position */
 }
 
 /* AboutMe Section End */
 /* Projects Section Start */
 
 .Projects {
-    /* Shape */
-    width: 80vw;
-    height: fit-content;
-    min-height: 100vh;
-    /* Style */
-    background-image: url('asets/ProjectsBG.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.5rem;
-    text-align: center;
-    /* Position */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  /* Shape */
+  width: 80vw;
+  height: fit-content;
+  min-height: 100vh;
+  /* Style */
+  background-image: url("assets/ProjectsBG.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  text-align: center;
+  /* Position */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Projects > div {
-    /* Shape */
-    margin: 3em 1em;
-    /* Style */
-    /* Position */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  /* Shape */
+  margin: 3em 1em;
+  /* Style */
+  /* Position */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .Projects div div {
-    /* Shape */
-    margin: 2em;
-    padding: 1.5em;
-    width: 25em;
-    /* Style */
-    text-align: center;
-    background-color: #f39d12cc;
-    border-radius: 0.3rem;
-    /* Position */
+  /* Shape */
+  margin: 2em;
+  padding: 1.5em;
+  width: 25em;
+  /* Style */
+  text-align: center;
+  background-color: #f39d12cc;
+  border-radius: 0.3rem;
+  /* Position */
 }
 
 .Projects div div img {
-    /* Shape */
-    max-height: 18em;
-    width: auto;
-    /* Style */
-    /* Position */
+  /* Shape */
+  max-height: 18em;
+  width: auto;
+  /* Style */
+  /* Position */
 }
 
 /* Projects Section End */
 /* CyberGrizzlies Section Start*/
 
 .CyberGrizzlies {
-    /* Shape */
-    height: fit-content;
-    min-height: 100vh;
-    width: 80vw;
-    /* Style */
-    background-image: url('asets/AchivementsBG.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.5rem;
-    /* Position */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* Shape */
+  height: fit-content;
+  min-height: 100vh;
+  width: 80vw;
+  /* Style */
+  background-image: url("assets/AchivementsBG.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  /* Position */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .CyberGrizzlies > p {
-    /* Shape */
-    margin: 2em;
-    padding: 1.5em;
-    /* Style */
-    background-color: #f39d12cc;
-    border-radius: 0.3rem;
-    /* Position */
+  /* Shape */
+  margin: 2em;
+  padding: 1.5em;
+  /* Style */
+  background-color: #f39d12cc;
+  border-radius: 0.3rem;
+  /* Position */
 }
 
 .CyberGrizzlies > div + p {
+  /* Shape */
+  margin: 1em;
+  padding: 1em;
+  /* Style */
+  background-color: #f39d12cc;
+  border-radius: 0.3rem;
+  /* Position */
+}
+
+.CyberGrizzlies > div {
+  /* Shape */
+  /* Style */
+  /* Position */
+  display: flex;
+  flex-direction: row;
+}
+
+.CyberGrizzlies > div div {
+  /* Shape */
+  max-width: 20vw;
+  margin: 0 1em;
+  padding: 1.5em;
+  /* Style */
+  background-color: #f39d12cc;
+  border-radius: 0.3rem;
+  /* Position */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CyberGrizzlies > h2 {
+  margin: 2em 0.5em 0.5em;
+  padding: 0.5em;
+  background-color: #f39d12cc;
+  border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    /* Shape */
+    width: 95vw;
+    height: auto;
+    margin: 0 auto;
+    /* Style */
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    /* Shape */
+    width: 100vw;
+    height: 10vh;
+    margin: 1em 0 0 0;
+    /* Style */
+    /* Position */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav {
+    /* Shape */
+    width: fit-content;
+    height: fit-content;
+    padding: 0.6em;
+    border-radius: 10px;
+    /* Style */
+    background-color: #2c3e50;
+    /* Positioning */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  header nav a {
+    /* Shape */
+    margin: 0 0.2em;
+    padding: 0.2em;
+    /* Style */
+    /* Position */
+  }
+
+  main {
+    /* Shape */
+    width: 95vw;
+    /* Style */
+    /* Position */
+    display: flex;
+    align-items: center;
+  }
+
+  .AboutMe {
+    /* Shape */
+    width: 96vw;
+    height: 100vh;
+    /* Style */
+    /* Position */
+  }
+
+  .AboutMe div {
+    max-width: 75vw;
+  }
+
+  .Projects {
+    /* Shape */
+    width: 96vw;
+    height: fit-content;
+    /* Style */
+    /* Position */
+  }
+
+  .Projects > div {
+    /* Shape */
+    /* Style */
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .Projects > div div {
+    /* Shape */
+    max-width: 25em;
+    /* Style */
+    /* Position */
+  }
+
+  .Projects h1 {
+    /* Shape */
+    margin: 3em 0 0 0;
+    /* Style */
+    /* Position */
+  }
+
+  .CyberGrizzlies {
+    /* Shape */
+    width: 96vw;
+    height: fit-content;
+    /* Style */
+    /* Position */
+  }
+
+  .CyberGrizzlies h2 {
+    /* Shape */
+    font-size: 1.3rem;
+    /* Style */
+    /* Position */
+  }
+
+  .CyberGrizzlies > div {
+    /* Shape */
+    /* Style */
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CyberGrizzlies > div div {
+    /* Shape */
+    max-width: 60vw;
+    /* Style */
+    /* Position */
+  }
+
+  .CyberGrizzlies > div div:nth-child(2) {
+    /* Shape */
+    margin: 3em 0em;
+    /* Style */
+    /* Position */
+  }
+
+  .CyberGrizzlies > div + p {
     /* Shape */
     margin: 1em;
     padding: 1em;
     /* Style */
-    background-color: #f39d12cc;
-    border-radius: 0.3rem;
     /* Position */
+  }
 }
 
-.CyberGrizzlies > div {
-    /* Shape */
-    /* Style */
-    /* Position */
+@media screen and (max-width: 450px) {
+  header > nav {
+    width: 80vw;
+  }
+
+  header > nav {
+    background: none;
+  }
+
+  header > nav > a {
+    font-size: 1rem;
+    padding: 0.2em;
+    margin: 0.1em;
+    background: #2c3e50;
+    color: #3498db;
+    border-radius: 0.5em;
+  }
+
+  .AboutMe,
+  .Projects {
+    width: 90vw;
+    height: 90vh;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .AboutMe > div {
+    height: 40vh;
+    overflow: scroll;
+  }
+
+  .Projects > div div {
+    max-width: 20em;
+  }
+
+  .Projects > div {
+    overflow: scroll;
+    height: fit-content;
+    align-content: flex-start;
+  }
+
+  .CyberGrizzlies {
+    width: 90vw;
+    height: 90vh;
     display: flex;
-    flex-direction: row;   
-}
+    justify-content: flex-end;
+  }
 
-.CyberGrizzlies > div div {
-    /* Shape */
-    max-width: 20vw;
-    margin: 0 1em;
-    padding: 1.5em;
-    /* Style */
-    background-color: #f39d12cc;
-    border-radius: 0.3rem;
-    /* Position */
+  .CyberGrizzlies > h2 {
+    margin: 0.4em;
+  }
+
+  .CyberGrizzlies > h2 + p {
+    height: 30vh;
+    overflow: scroll;
+    margin: 0.4em;
+    padding: 0.4em;
+  }
+
+  .CyberGrizzlies > div {
+    overflow: scroll;
+    height: 25vh;
+    flex-direction: column;
+  }
+
+  .CyberGrizzlies > div > div > h3 {
+    margin: 0;
+  }
+
+  .CyberGrizzlies > div + p {
+    height: 5vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    font-size: 1rem;
+  }
 }
 
-.CyberGrizzlies > h2 {
-    margin: 2em 0.5em 0.5em;
-    padding: 0.5em;
-    background-color: #f39d12cc;
-    border-radius: 0.3rem;
-}
+@media screen and (max-width: 450px) and (max-height: 700px) {
+  header > nav {
+    width: 80vw;
+  }
 
-::-webkit-scrollbar {
-    display: none;
-}
+  header > nav {
+    background: none;
+  }
 
-@media screen and (max-width: 1000px){
-    body {
-        /* Shape */
-        width: 95vw;
-        height: auto;
-        margin: 0 auto;
-        /* Style */
-        /* Position */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  header > nav > a {
+    font-size: 1rem;
+    padding: 0.2em;
+    margin: 0.1em;
+    background: #2c3e50;
+    color: #3498db;
+    border-radius: 0.5em;
+  }
 
-    header {
-        /* Shape */
-        width: 100vw;
-        height: 10vh;
-        margin: 1em 0 0 0;
-        /* Style */
-        /* Position */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
+  .AboutMe,
+  .Projects {
+    width: 90vw;
+    height: 90vh;
+    justify-content: center;
+    align-self: center;
+  }
 
-    header nav {
-        /* Shape */
-        width: fit-content;
-        height: fit-content;
-        padding: 0.6em;
-        border-radius: 10px;
-        /* Style */
-        background-color: #2C3E50;
-        /* Positioning */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-items: stretch;
-    }
-    
-    header nav a {
-        /* Shape */
-        margin: 0 0.2em;
-        padding: 0.2em;
-        /* Style */
-        /* Position */
-    }
+  .AboutMe > div {
+    height: 40vh;
+    overflow: scroll;
+  }
 
-    main {
-        /* Shape */
-        width: 95vw;
-        /* Style */
-        /* Position */
-        align-items: flex-end; 
-    }
+  .Projects > div div {
+    max-width: 20em;
+  }
 
-    .AboutMe {
-        /* Shape */
-        width: 96vw;
-        height: 100vh;
-        /* Style */
-        /* Position */
-    }
+  .Projects > div {
+    overflow: scroll;
+    height: fit-content;
+    align-content: flex-start;
+  }
 
-    .AboutMe div {
-        max-width: 75vw;
+  .CyberGrizzlies {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    }
-    
-    .Projects {
-        /* Shape */
-        width: 96vw;
-        height: fit-content;
-        /* Style */
-        /* Position */
-    }
+  .CyberGrizzlies > h2 {
+    margin: 0.4em;
+  }
 
-    .Projects > div {
-        /* Shape */
-        /* Style */
-        /* Position */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-    }
+  .CyberGrizzlies > h2 + p {
+    height: 30vh;
+    overflow: scroll;
+    margin: 0.4em;
+    padding: 0.4em;
+  }
 
-    .Projects > div div {
-        /* Shape */
-        max-width: 25em;
-        /* Style */
-        /* Position */
-    }
+  .CyberGrizzlies > div {
+    overflow: scroll;
+    height: 25vh;
+    flex-direction: column;
+  }
 
-    .Projects h1 {
-        /* Shape */
-        margin: 3em 0 0 0;
-        /* Style */
-        /* Position */
-    }
+  .CyberGrizzlies > div > div > h3 {
+    margin: 0;
+  }
 
-    .CyberGrizzlies {
-        /* Shape */
-        width: 96vw;
-        height: fit-content;
-        /* Stlye */
-        /* Position */
-        
-    }
-
-    .CyberGrizzlies h2 {
-        /* Shape */
-        margin: 4.5em 1em 0 1em;
-        /* Style */
-        /* Position */
-    }
-
-    .CyberGrizzlies > div {
-        /* Shape */
-        /* Style */
-        /* Position */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .CyberGrizzlies > div div {
-        /* Shape */
-        max-width: 60vw;
-        /* Style */
-        /* Position */
-    }
-
-    .CyberGrizzlies > div div:nth-child(2) {
-        /* Shape */
-        margin: 3em 0em;
-        /* Style */
-        /* Position */
-    }
-
-    .CyberGrizzlies > div + p {
-        /* Shape */
-        margin: 1em;
-        padding: 1em;
-        /* Style */
-        /* Position */
-    }
+  .CyberGrizzlies > div + p {
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
 }
